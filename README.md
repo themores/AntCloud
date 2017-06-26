@@ -11,14 +11,14 @@
 #### 导入
 #### 初始化
 一般都放在Application onCreate 方法中进行初始化
-<pre>
+``` java
 AntCloud.getInstance().init(context,baseUrl);
-</pre>
+```
 
 #### 使用
 <pre>
-1.如何定义Service 参考retrofit 官方
-http://square.github.io/retrofit/
+1.如何定义Service 参考[retrofit 官方](http://square.github.io/retrofit/)  
+
 <code>
 public interface ApiService {
     @GET("top250")
