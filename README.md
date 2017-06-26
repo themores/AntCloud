@@ -97,7 +97,16 @@ public class AntSchedulers {
   public AntSubscriber(Context context) 
   public AntSubscriber(Context context, boolean mIsOpenToast) //第二个字断用于控制是否弹出toast
 ```
-3.具体使用情况，请查看源代码中的demo
+3.HttpResult 用户自定义的返回结果类
+一般为以下风格，自己根据服务器风格进行定义。
+``` java
+public class HttpResult<T> {
+	private int code ;
+	private String msg;
+	private T data;
+}
+```
+4.具体使用情况，请查看源代码中的demo
 #### 参考资料
 1.Rxjava 学习
 [很全的Rxjava教程](https://mcxiaoke.gitbooks.io/rxdocs/content/)
