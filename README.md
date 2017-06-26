@@ -1,6 +1,7 @@
 # AntCloud
-
 “蚁云”,该项目由retrofit2.0+rxjava1.0结合使用封装的网络库。
+
+[![](https://jitpack.io/v/themores/AntCloud.svg)](https://jitpack.io/#themores/AntCloud)
 #### 功能优势
 
 >1.支持添加网络拦截器
@@ -12,6 +13,20 @@
 >4.支持多interface-service
 
 #### 导入
+Step 1. Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        compile 'com.github.themores:AntCloud:v1.0'
+	}
+
 #### 初始化
 一般都放在Application onCreate 方法中进行初始化
 ``` java
