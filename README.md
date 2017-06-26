@@ -26,7 +26,6 @@ public interface ApiService {
     Observable<HttpResult<List<Subject>>> getTopMovie(@Query("start") int start, @Query("count") int count);
 }
 ```
-
 2. 获取Service
 ``` java
 ApiService service = AntCloud.getInstance().createService(Service.class);
@@ -83,6 +82,7 @@ public class AntSchedulers {
   public AntSubscriber(Context context) 
   public AntSubscriber(Context context, boolean mIsOpenToast) //第二个字断用于控制是否弹出toast
 ```
+3.具体使用情况，请查看源代码中的demo
 #### 参考资料
 1.Rxjava 学习
 [很全的Rxjava教程](https://mcxiaoke.gitbooks.io/rxdocs/content/)
